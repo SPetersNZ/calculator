@@ -43,4 +43,17 @@
     width: 90%;
     padding: 10px;
     align-self: center;
+    margin: 10px;
+}
+
+#equationLine {
+    height: 40%;
+    text-align: right;
+    align-content: center;
+}
+
+#answerLine {
+    height: 60%;
+    text-align: right;
+    align-content: center;
 }
