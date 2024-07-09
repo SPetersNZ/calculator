@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div id="calculatorContainer">
+        <div id="displayContainer">
+            <div id="equationLine"><!--equations to go here--></div>
+            <div id="answerLine"><!--answers to go here--></div>
+        </div>
+        <div class="btnRow">
+            <button id="clearButton">CLEAR</button>
+            <button id="deleteButton">DELETE</button>
+        </div>
+        <div class="btnRow">
+            <button class="numPad">7</button>
+            <button class="numPad">8</button>
+            <button class="numPad">9</button>
+            <button class="numPad">&divide;</button>
+        </div>
+        <div class="btnRow">
+            <button class="numPad">4</button>
+            <button class="numPad">5</button>
+            <button class="numPad">6</button>
+            <button class="numPad">&times;</button>
+        </div>
+        <div class="btnRow">
+            <button class="numPad">1</button>
+            <button class="numPad">2</button>
+            <button class="numPad">3</button>
+            <button class="numPad">&minus;</button>
+        </div>
+        <div class="btnRow">
+            <button class="numPad">.</button>
+            <button class="numPad">0</button>
+            <button class="numPad">&equals;</button>
+            <button class="numPad">&plus;</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
 </body>
 </html>

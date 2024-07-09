@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 564px;
+    border: 1px solid black;
+    justify-content: center;
+    padding: 10px;
+}
+
+.numPad {
+    width: 25%;
+    margin: 10px;
+    align-self: stretch;
+}
+
+#clearButton,
+#deleteButton {
+    width: 50%;
+    margin: 10px;
+    align-self: stretch;
+}
+
+.btnRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#displayContainer {
+    border: 1px solid black;
+    height: 25%;
+    width: 90%;
+    padding: 10px;
+    align-self: center;
+}
