@@ -9,6 +9,7 @@ const numButton = document.querySelectorAll(".numPad");
 const operationButton = document.querySelectorAll(".operation");
 const equationLine = document.querySelector("#equationLine");
 const answerLine = document.querySelector("#answerLine");
+const plusButton = document.querySelector("#plus");
 
 numButton.forEach((button) => {
     button.addEventListener("click", getInput);
@@ -30,8 +31,8 @@ function getInput (e) {
 
 function updateAnswerLine(text, e) {
     var element = e.target;
-    var test = element.value;
-    if (test === "&equals;") { 
+    var equalsTest = element.innerText;
+    if (equalsTest === "=") { 
         operate(firstString, secondString); 
     } else if (anyMathOperationsIncluded(equationLine.innerText, mathOperations)) { 
         secondString = secondString + text;
@@ -60,11 +61,22 @@ function updateEquationLine(text) {
 }
 
 function operate(firstString, secondString) {
-    alert("This is a test!");
+    if (plusButton.value === "true") {
+        answer = plus(firstString, secondString);
+        answerLine.innerText = answer;
+    }
 };
 
 function plus(firstString, secondString) {
-    return firstString + secondString;
+    let cleanedFirstString = firstString
+    .split("")
+    .filter((char) => numbers.includes(char))
+    .join("");
+    let cleanedSecondString = secondString
+    .split("")
+    .filter((char) => numbers.includes(char))
+    .join("");
+    return Number(cleanedFirstString) + Number(cleanedSecondString);
 };
 
 function anyMathOperationsIncluded(str, chars) {
