@@ -10,6 +10,10 @@ const operationButton = document.querySelectorAll(".operation");
 const equationLine = document.querySelector("#equationLine");
 const answerLine = document.querySelector("#answerLine");
 const plusButton = document.querySelector("#plus");
+// const minusButton
+// const divideButton
+// const timesButton
+const clearButton = document.querySelector("#clearButton");
 
 numButton.forEach((button) => {
     button.addEventListener("click", getInput);
@@ -18,6 +22,8 @@ numButton.forEach((button) => {
 operationButton.forEach((button) => {
     button.addEventListener("click", getInput);
 });
+
+clearButton.addEventListener("click", clear);
 
 function getInput (e) {
     var element = e.target;
@@ -49,9 +55,9 @@ function updateAnswerLine(text, e) {
             .join("");
         answerLine.innerText = cleanedFirstString;
     }
-    console.log("First: " + firstString);
-    console.log("Second: " + secondString);
-    console.log("Text: " + text);
+    // console.log("First: " + firstString);
+    // console.log("Second: " + secondString);
+    // console.log("Text: " + text);
     // console.log("true/false: " + test);
 };
 
@@ -76,6 +82,7 @@ function plus(firstString, secondString) {
     .split("")
     .filter((char) => numbers.includes(char))
     .join("");
+    plusButton.value = "false";
     return Number(cleanedFirstString) + Number(cleanedSecondString);
 };
 
@@ -87,3 +94,12 @@ function anyMathOperationsIncluded(str, chars) {
     }
     return false;
 }
+
+function clear() {
+    firstString = "";
+    secondString = "";
+    answer = "";
+    equation = "";
+    equationLine.innerText = "";
+    answerLine.innerText = "";
+};
