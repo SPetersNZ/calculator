@@ -2,7 +2,9 @@ let firstString = "";
 let secondString = "";
 let answer = "";
 let equation = "";
+let addingToEquationBool = false;
 const mathOperations = "÷−×+";
+const equalsOperation = "=";
 const numbers = ".0123456789";
 
 const numButton = document.querySelectorAll(".numPad");
@@ -37,34 +39,30 @@ function getInput (e) {
 
 function updateAnswerLine(text, e) {
     var element = e.target;
-    var equalsTest = element.innerText;
-    if (equalsTest === "=") { 
+    var click = element.innerText;
+    if (click === "=") { 
         operate(firstString, secondString); 
-    } else if (anyMathOperationsIncluded(equationLine.innerText, mathOperations)) { 
-        secondString = secondString + text;
-        let cleanedSecondString = secondString
-            .split("")
-            .filter((char) => numbers.includes(char))
-            .join("");
-        answerLine.innerText = cleanedSecondString;
+    } else if (anyMathOperationsIncluded(equationLine.innerText, mathOperations)) {
+        if (addingToEquationBool == true) {
+            addingToEquation(e);
+        } else {
+            secondString = secondString + text;
+            let cleanedSecondString = cleanedString(secondString);
+            answerLine.innerText = cleanedSecondString;
+            console.log(cleanedSecondString);
+        }
     } else {
         firstString = firstString + text;
-        let cleanedFirstString = firstString
-            .split("")
-            .filter((char) => numbers.includes(char))
-            .join("");
+        let cleanedFirstString = cleanedString(firstString);
         answerLine.innerText = cleanedFirstString;
+        console.log(cleanedFirstString);
     }
-    // console.log("First: " + firstString);
-    // console.log("Second: " + secondString);
-    // console.log("Text: " + text);
-    // console.log("true/false: " + test);
 };
 
 function updateEquationLine(text) {
     equation = equation + text;
     equationLine.innerText = equation; 
-}
+};
 
 function operate(firstString, secondString) {
     if (plusButton.value === "true") {
@@ -74,16 +72,11 @@ function operate(firstString, secondString) {
 };
 
 function plus(firstString, secondString) {
-    let cleanedFirstString = firstString
-    .split("")
-    .filter((char) => numbers.includes(char))
-    .join("");
-    let cleanedSecondString = secondString
-    .split("")
-    .filter((char) => numbers.includes(char))
-    .join("");
+    let cleanedFirstString = cleanedString(firstString);
+    let cleanedSecondString = cleanedString(secondString);
     plusButton.value = "false";
-    return Number(cleanedFirstString) + Number(cleanedSecondString);
+    addingToEquationBool = true;
+    return answer = Number(cleanedFirstString) + Number(cleanedSecondString);
 };
 
 function anyMathOperationsIncluded(str, chars) {
@@ -93,7 +86,7 @@ function anyMathOperationsIncluded(str, chars) {
         }
     }
     return false;
-}
+};
 
 function clear() {
     firstString = "";
@@ -103,3 +96,28 @@ function clear() {
     equationLine.innerText = "";
     answerLine.innerText = "";
 };
+
+function addingToEquation(e) {
+    if (anyMathOperationsIncluded(equationLine.innerText, equalsOperation)) {
+        firstString = answer;
+        var element = e.target;
+        var text = element.innerText;
+        if (text === "+") {
+            equationLine.innerText = firstString + "+";
+            equation = "";
+            secondString = "";
+            updateEquationLine(firstString);
+        }
+        // add lines here for minus, divide, times
+        answerLine.innerText = "";
+        addingToEquationBool = false;
+    }
+}
+
+function cleanedString(str) {
+    let cleanedString = str.toString()
+    .split("")
+    .filter((char) => numbers.includes(char))
+    .join("");
+    return cleanedString;
+}
