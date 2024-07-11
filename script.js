@@ -91,8 +91,11 @@ function anyMathOperationsIncluded(str, chars) {
 function clear() {
     firstString = "";
     secondString = "";
+    cleanedFirstString = "";
+    cleanedSecondString = "";
     answer = "";
     equation = "";
+    addingToEquationBool = false;
     equationLine.innerText = "";
     answerLine.innerText = "";
 };
