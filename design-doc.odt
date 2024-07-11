@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2024-07-11T11:14:13.201087788</dc:date><meta:editing-duration>PT10H45M23S</meta:editing-duration><meta:editing-cycles>11</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="52" meta:word-count="470" meta:character-count="2546" meta:non-whitespace-character-count="2103"/></office:meta>
+ <office:meta><dc:date>2024-07-11T19:48:24.845241427</dc:date><meta:editing-duration>PT18H28M44S</meta:editing-duration><meta:editing-cycles>12</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="62" meta:word-count="531" meta:character-count="2854" meta:non-whitespace-character-count="2350"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">34290</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">42333</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">34451</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">18443</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">12554</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">38936</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">24283</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">54028</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">34290</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">42333</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">34449</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">52731</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">60775</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2519890</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2696945</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -365,6 +365,15 @@
   </style:style>
   <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
    <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="00267352" officeooo:paragraph-rsid="00267352"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="00283299" officeooo:paragraph-rsid="00283299"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00267352" officeooo:paragraph-rsid="00267352"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties style:text-underline-style="none" officeooo:rsid="001d072d"/>
@@ -877,7 +886,21 @@
    <text:p text:style-name="P21"><text:span text:style-name="T11"><text:tab/></text:span><text:span text:style-name="T16">if (equals button == true &amp;&amp; plus == true || minus == true || divide == true || times == true)</text:span></text:p>
    <text:p text:style-name="P36"><text:span text:style-name="T11"><text:tab/><text:tab/></text:span><text:span text:style-name="T16">firstString = answer;</text:span></text:p>
    <text:p text:style-name="P36"><text:span text:style-name="T14"><text:tab/><text:tab/></text:span><text:span text:style-name="T15">additional work to answer </text:span><text:span text:style-name="T16">(start loop again)</text:span></text:p>
-   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P36"/>
+   <text:p text:style-name="P41">Continuing if there is already an answer in the calculator;</text:p>
+   <text:p text:style-name="P39"/>
+   <text:p text:style-name="P39">123 + 456 = 579</text:p>
+   <text:p text:style-name="P39">+ 123 = 702</text:p>
+   <text:p text:style-name="P39"/>
+   <text:p text:style-name="P39">how to code?</text:p>
+   <text:p text:style-name="P39"/>
+   <text:p text:style-name="P39">Logic ===</text:p>
+   <text:p text:style-name="P39"><text:tab/>new function at top of input function</text:p>
+   <text:p text:style-name="P39"><text:tab/><text:tab/>check if equation.innerText has = </text:p>
+   <text:p text:style-name="P39"><text:tab/><text:tab/>if true </text:p>
+   <text:p text:style-name="P39"><text:tab/><text:tab/><text:tab/>firstString = answer</text:p>
+   <text:p text:style-name="P39"/>
+   <text:p text:style-name="P40">also need to force equation so that + will do = if there is already an equation in the viewport</text:p>
   </office:text>
  </office:body>
 </office:document>
