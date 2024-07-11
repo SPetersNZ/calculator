@@ -41,7 +41,7 @@ function updateAnswerLine(text, e) {
     var element = e.target;
     var click = element.innerText;
     if (click === "=") { 
-        operate(firstString, secondString); 
+        operate(firstString, secondString);
     } else if (anyMathOperationsIncluded(equationLine.innerText, mathOperations)) {
         if (addingToEquationBool == true) {
             addingToEquation(e);
@@ -49,19 +49,21 @@ function updateAnswerLine(text, e) {
             secondString = secondString + text;
             let cleanedSecondString = cleanedString(secondString);
             answerLine.innerText = cleanedSecondString;
-            console.log(cleanedSecondString);
         }
     } else {
         firstString = firstString + text;
         let cleanedFirstString = cleanedString(firstString);
         answerLine.innerText = cleanedFirstString;
-        console.log(cleanedFirstString);
     }
 };
 
 function updateEquationLine(text) {
-    equation = equation + text;
-    equationLine.innerText = equation; 
+    if (anyMathOperationsIncluded(equationLine.innerText, equalsOperation)) {
+        //  do nothing
+    } else {
+        equation = equation + text;
+        equationLine.innerText = equation; 
+    }
 };
 
 function operate(firstString, secondString) {
@@ -78,6 +80,8 @@ function plus(firstString, secondString) {
     addingToEquationBool = true;
     return answer = Number(cleanedFirstString) + Number(cleanedSecondString);
 };
+
+// add functions here for minus, divide, times
 
 function anyMathOperationsIncluded(str, chars) {
     for (let char of chars) {
