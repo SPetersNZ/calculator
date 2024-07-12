@@ -3,8 +3,8 @@ let secondString = "";
 let answer = "";
 let equation = "";
 let addingToEquationBool = false;
-const mathOperations = "÷−×+";
-const equalsOperation = "=";
+const mathOperations = "÷-×+";
+const equalSign = "=";
 const numbers = ".0123456789";
 
 const numButton = document.querySelectorAll(".numPad");
@@ -12,11 +12,12 @@ const operationButton = document.querySelectorAll(".operation");
 const equationLine = document.querySelector("#equationLine");
 const answerLine = document.querySelector("#answerLine");
 const plusButton = document.querySelector("#plus");
-// const minusButton
+const minusButton = document.querySelector("#minus");
 // const divideButton
 // const timesButton
 const clearButton = document.querySelector("#clearButton");
 
+//  how to combine numButton && operationButton into single line?
 numButton.forEach((button) => {
     button.addEventListener("click", getInput);
 });
@@ -40,9 +41,11 @@ function getInput (e) {
 function updateAnswerLine(text, e) {
     var element = e.target;
     var click = element.innerText;
+    mathOperationsCheck = anyMathOperationsIncluded(equationLine.innerText, mathOperations);
+    //  tidy if statements into => operations
     if (click === "=") { 
         operate(firstString, secondString);
-    } else if (anyMathOperationsIncluded(equationLine.innerText, mathOperations)) {
+    } else if (mathOperationsCheck.firstValue) {
         if (addingToEquationBool == true) {
             addingToEquation(e);
         } else {
@@ -58,19 +61,38 @@ function updateAnswerLine(text, e) {
 };
 
 function updateEquationLine(text) {
-    if (anyMathOperationsIncluded(equationLine.innerText, equalsOperation)) {
+    //  tidy if statements into => operations
+    equalSignCheck = anyMathOperationsIncluded(equationLine.innerText, equalSign); 
+    if (equalSignCheck.firstValue) {
         //  do nothing
     } else {
         equation = equation + text;
         equationLine.innerText = equation; 
     }
+    console.log(equationLine.innerText);
+    mathOperationsCheck = anyMathOperationsIncluded(equationLine.innerText, mathOperations);
+    if (mathOperationsCheck.secondValue > 1) {
+        operate(firstString, secondString);
+        //  answer below needs to include the clicked operation
+        //  i.e. 98 + 2 +
+        //  100 (does not enter + again to symbolize second + above)
+        //  must also ensure that the button.value is true
+        equationLine.innerText = answer;
+        answerLine.innerText = "";
+    }
 };
 
 function operate(firstString, secondString) {
+    //  tidy if statements into => operations
     if (plusButton.value === "true") {
         answer = plus(firstString, secondString);
         answerLine.innerText = answer;
     }
+    if (minusButton.value === "true") {
+        answer = minus(firstString, secondString);
+        answerLine.innerText = answer;
+    }
+    //  add checks here for other math operations
 };
 
 function plus(firstString, secondString) {
@@ -81,15 +103,32 @@ function plus(firstString, secondString) {
     return answer = Number(cleanedFirstString) + Number(cleanedSecondString);
 };
 
+function minus(firstString, secondString) {
+    cleanedFirstString = cleanedString(firstString);
+    cleanedSecondString = cleanedString(secondString);
+    minusButton.value = "false";
+    addingToEquationBool = true;
+    return answer = Number(cleanedFirstString) - Number(cleanedSecondString);
+};
+
 // add functions here for minus, divide, times
 
 function anyMathOperationsIncluded(str, chars) {
+    let firstValue = false;
+    let secondValue = 0;
     for (let char of chars) {
+        let count = 0;
         if (str.includes(char)) {
-            return true;
+            firstValue = true;
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === char) {
+                    count++;
+                }
+            }
+            secondValue += count;
         }
     }
-    return false;
+    return { firstValue, secondValue };
 };
 
 function clear() {
@@ -102,15 +141,30 @@ function clear() {
     addingToEquationBool = false;
     equationLine.innerText = "";
     answerLine.innerText = "";
+    //  reset button values to false
+    plusButton.value = "false";
+    minusButton.value = "false";
+    //  how to target all buttons at once?
+    //  operationButton.value = "false";
 };
 
 function addingToEquation(e) {
-    if (anyMathOperationsIncluded(equationLine.innerText, equalsOperation)) {
+    //  tidy if statements into => operations
+    equalSignCheck = anyMathOperationsIncluded(equationLine.innerText, equalSign);
+    mathOperationsCheck = anyMathOperationsIncluded(equationLine.innerText, mathOperations);
+    if (equalSignCheck.firstValue) {
         firstString = answer;
         var element = e.target;
         var text = element.innerText;
+        //  can below sections be passed through a function?
         if (text === "+") {
             equationLine.innerText = firstString + "+";
+            equation = "";
+            secondString = "";
+            updateEquationLine(firstString);
+        }
+        if (text === "-") {
+            equationLine.innerText = firstString + "-";
             equation = "";
             secondString = "";
             updateEquationLine(firstString);
