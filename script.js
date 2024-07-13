@@ -16,7 +16,8 @@ const minusButton = document.querySelector("#minus");
 const divideButton = document.querySelector("#divide");
 const timesButton = document.querySelector("#times");
 const clearButton = document.querySelector("#clearButton");
-// clearButton.addEventListener("click", clear);
+
+clearButton.addEventListener("click", clear);
 
 [... numButton, ...operationButton].forEach((button) => {
     button.addEventListener("click", getInput);
@@ -122,19 +123,17 @@ function whatMathOperator() {
     return result;
 };
 
-// function clear() {
-//     firstString = "";
-//     secondString = "";
-//     cleanedFirstString = "";
-//     cleanedSecondString = "";
-//     answer = "";
-//     equation = "";
-//     addingToEquationBool = false;
-//     equationLine.innerText = "";
-//     answerLine.innerText = "";
-//     //  reset button values to false
-//     plusButton.value = "false";
-//     minusButton.value = "false";
-//     //  how to target all buttons at once?
-//     //  operationButton.value = "false";
-// };
+function clear() {
+    equation = "";
+    answer = "";
+    firstString = "";
+    secondString = "";
+    equationLine.innerText = "";
+    answerLine.innerText = "";
+    //  how to target all buttons at once?
+    //  operationButton.value = "false";
+    plusButton.value = "false";
+    minusButton.value = "false";
+    divideButton.value = "false";
+    timesButton.value = "false";
+};
