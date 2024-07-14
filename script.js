@@ -39,12 +39,17 @@ function operate(e) {
     var text = element.innerText;
     equalSignCheck = checkForMathOperators(equation, equalSign);
     multipleOperatorsCheck = multipleMathOperators(equation + text, mathOperations);
+    lastOperatorCheck = lastOperator(equation);
     if (text === equalSign && (equalSignCheck)) {
         //  do nothing
         return;
     }
     if (text === equalSign && (!(equalSignCheck))) {
         createEquationArray();
+    }
+    if (text === mathOperations && text === lastOperatorCheck) {
+        //  do nothing
+        return;
     }
     if (multipleOperatorsCheck > 1) {
         if (multipleOperatorsCheck > 1 && (equalSignCheck)) {
@@ -53,27 +58,23 @@ function operate(e) {
             equationLine.innerText = equation;
         } else {
             equationCheck = equation + text;
-            let lastOperator = equationCheck
-                .split("")
-                .slice(equationCheck.length - 1);
+            // let lastOperator = equationCheck
+            //     .split("")
+            //     .slice(equationCheck.length - 1);
+            let lastOperatorCheck = lastOperator(equationCheck);
             let cleanedEquation = equation
                 .split("")
                 .slice(0, equationCheck.length - 1)
                 .join("");
             equation = cleanedEquation;
             createEquationArray();
-            equation = answer + lastOperator
+            equation = answer + lastOperatorCheck;
             equationLine.innerText = equation;
         }
     } else if (answerLine.innerText.length > 0 && (equalSignCheck) && (multipleOperatorsCheck > 0)) {
-        // let str = text;
         clearCalculator();
-        // answer = "";
         equation = text;
         equationLine.innerText = equation;
-        console.log("answer " + answer);
-        console.log("equation " + equation);
-        console.log("text " + text);
     } else if (answerLine.innerText.length > 0 && (equalSignCheck)) {
         continueCalculation(answer, e);
         equation = answer + text;
@@ -193,4 +194,12 @@ function deleteInput() {
         .join("");
     equation = str;
     equationLine.innerText = equation;
-}
+};
+
+function lastOperator(str) {
+    let lastOperator = str;
+    lastOperator = lastOperator
+    .split("")
+    .slice(lastOperator.length - 1);
+    return lastOperator;
+};
