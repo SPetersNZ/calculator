@@ -36,6 +36,7 @@ function operate(e) {
     var element = e.target;
     var text = element.innerText;
     equalSignCheck = checkForMathOperators(equation, equalSign);
+    multipleOperatorsCheck = multipleMathOperators(equation + text, mathOperations);
     if (text === equalSign && (equalSignCheck)) {
         //  do nothing
         return;
@@ -43,7 +44,25 @@ function operate(e) {
     if (text === equalSign && (!(equalSignCheck))) {
         createEquationArray();
     }
-    if (answerLine.innerText.length > 0 && (equalSignCheck)) {
+    if (multipleOperatorsCheck > 1) {
+        equationCheck = equation + text;
+        let lastOperator = equationCheck
+            .split("")
+            .slice(equationCheck.length - 1);
+        // let firstOperator = whatMathOperator();
+        let cleanedEquation = equation
+            .split("")
+            .slice(0, equationCheck.length - 1)
+            .join("");
+        equation = cleanedEquation;
+        createEquationArray();
+        // console.log(answer);
+        equationLine.innerText = answer + lastOperator;
+        // answerLine.innerText = "";
+        element.value = "true";
+        //  kicks into next if statement as answerLine.innerText.length is now greater than 0
+        //  need a check for this - flag within this loop?
+    } else if (answerLine.innerText.length > 0 && (equalSignCheck)) {
         continueCalculation(answer, e);
         equation = answer + text;
         equationLine.innerText = equation;
@@ -121,6 +140,22 @@ function whatMathOperator() {
     }
     let result = text.slice(index, index + 1);
     return result;
+};
+
+function multipleMathOperators(str, chars) {
+    let value = 0;
+    for (let char of chars) {
+        let count = 0;
+        if (str.includes(char)) {
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === char) {
+                    count++;
+                }
+            }
+            value += count;
+        }
+    }
+    return value;
 };
 
 function clear() {
