@@ -16,8 +16,10 @@ const minusButton = document.querySelector("#minus");
 const divideButton = document.querySelector("#divide");
 const timesButton = document.querySelector("#times");
 const clearButton = document.querySelector("#clearButton");
+const deleteButton = document.querySelector("#deleteButton");
 
-clearButton.addEventListener("click", clear);
+clearButton.addEventListener("click", clearCalculator);
+deleteButton.addEventListener("click", deleteInput);
 
 [... numButton, ...operationButton].forEach((button) => {
     button.addEventListener("click", getInput);
@@ -159,7 +161,7 @@ function multipleMathOperators(str, chars) {
     return value;
 };
 
-function clear() {
+function clearCalculator() {
     equation = "";
     answer = "";
     firstString = "";
@@ -173,3 +175,14 @@ function clear() {
     divideButton.value = "false";
     timesButton.value = "false";
 };
+
+function deleteInput() {
+    let str = equation;
+    str = str
+        .split("")
+        .slice(0, str.length - 1)
+        .join("");
+    equationLine.innerText = str;
+    equation = str;
+    console.log(str);
+}
