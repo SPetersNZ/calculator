@@ -65,6 +65,15 @@ function operate(e) {
             equation = answer + lastOperator
             equationLine.innerText = equation;
         }
+    } else if (answerLine.innerText.length > 0 && (equalSignCheck) && (multipleOperatorsCheck > 0)) {
+        // let str = text;
+        clearCalculator();
+        // answer = "";
+        equation = text;
+        equationLine.innerText = equation;
+        console.log("answer " + answer);
+        console.log("equation " + equation);
+        console.log("text " + text);
     } else if (answerLine.innerText.length > 0 && (equalSignCheck)) {
         continueCalculation(answer, e);
         equation = answer + text;
