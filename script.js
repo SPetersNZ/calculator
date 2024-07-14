@@ -182,7 +182,6 @@ function deleteInput() {
         .split("")
         .slice(0, str.length - 1)
         .join("");
-    equationLine.innerText = str;
     equation = str;
-    console.log(str);
+    equationLine.innerText = equation;
 }
