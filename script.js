@@ -2,7 +2,7 @@ let equation = "";
 let answer = "";
 let firstString = "";
 let secondString = "";
-const mathOperations = "÷-×+";
+const mathOperations = ["÷", "-", "×", "+"];
 const mathOperationsSplit = /[÷\-×+]/;
 const equalSign = "=";
 const numbers = ".0123456789";
@@ -26,7 +26,7 @@ clearButton.addEventListener("click", clear);
 function getInput (e) {
     var element = e.target;
     var text = element.innerText;
-    if (mathOperations.includes(text)) {
+    if (mathOperations.includes(text) || equalSign.includes(text)) {
         e.target.value = "true";
     }
     operate(e);
@@ -45,23 +45,24 @@ function operate(e) {
         createEquationArray();
     }
     if (multipleOperatorsCheck > 1) {
-        equationCheck = equation + text;
-        let lastOperator = equationCheck
-            .split("")
-            .slice(equationCheck.length - 1);
-        // let firstOperator = whatMathOperator();
-        let cleanedEquation = equation
-            .split("")
-            .slice(0, equationCheck.length - 1)
-            .join("");
-        equation = cleanedEquation;
-        createEquationArray();
-        // console.log(answer);
-        equationLine.innerText = answer + lastOperator;
-        // answerLine.innerText = "";
-        element.value = "true";
-        //  kicks into next if statement as answerLine.innerText.length is now greater than 0
-        //  need a check for this - flag within this loop?
+        if (multipleOperatorsCheck > 1 && (equalSignCheck)) {
+            continueCalculation(answer, e);
+            equation = answer + text;
+            equationLine.innerText = equation;
+        } else {
+            equationCheck = equation + text;
+            let lastOperator = equationCheck
+                .split("")
+                .slice(equationCheck.length - 1);
+            let cleanedEquation = equation
+                .split("")
+                .slice(0, equationCheck.length - 1)
+                .join("");
+            equation = cleanedEquation;
+            createEquationArray();
+            equation = answer + lastOperator
+            equationLine.innerText = equation;
+        }
     } else if (answerLine.innerText.length > 0 && (equalSignCheck)) {
         continueCalculation(answer, e);
         equation = answer + text;
