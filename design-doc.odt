@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2024-07-13T21:28:33.474151679</dc:date><meta:editing-duration>PT19H4M40S</meta:editing-duration><meta:editing-cycles>15</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="63" meta:word-count="547" meta:character-count="2943" meta:non-whitespace-character-count="2423"/></office:meta>
+ <office:meta><dc:date>2024-07-14T09:43:37.079559560</dc:date><meta:editing-duration>PT19H9M46S</meta:editing-duration><meta:editing-cycles>16</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="67" meta:word-count="580" meta:character-count="3159" meta:non-whitespace-character-count="2610"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">42462</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">50377</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">34451</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">18443</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">23765</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">54515</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">8724</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">64269</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">42462</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">50377</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">34449</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">60904</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">68818</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2935731</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2997440</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -154,7 +154,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="NZ" style:letter-kerning="true" style:font-name-asian="Noto Serif CJK SC" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -334,55 +334,64 @@
   <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties style:text-line-through-style="solid" style:text-line-through-type="single" style:text-underline-style="none" officeooo:rsid="0020fe11" officeooo:paragraph-rsid="0022f08b"/>
   </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:paragraph-properties fo:break-before="page"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001d072d" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001d072d" officeooo:paragraph-rsid="001f6a1e"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001f6a1e"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001f6a1e"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001bcaac" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L6">
-   <style:text-properties style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001f6a1e"/>
-  </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:text-properties officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:text-properties style:text-line-through-style="solid" style:text-line-through-type="single" style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001bcaac"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties style:line-height-at-least="0.503cm"/>
    <style:text-properties fo:color="#6a9955" loext:opacity="100%" style:font-name="Droid Sans Mono" fo:font-size="10.5pt" fo:font-weight="normal" fo:background-color="transparent"/>
   </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties style:line-height-at-least="0.503cm"/>
    <style:text-properties fo:background-color="transparent"/>
   </style:style>
-  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:paragraph-rsid="002a69bf"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001d072d" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001d072d" officeooo:paragraph-rsid="001f6a1e"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001f6a1e"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001f6a1e"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001bcaac" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L6">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001f6a1e"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties style:text-line-through-style="solid" style:text-line-through-type="single" style:text-underline-style="none" officeooo:rsid="001da487" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="001f6a1e" officeooo:paragraph-rsid="001bcaac"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="002a69bf" officeooo:paragraph-rsid="002a69bf"/>
+  </style:style>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002dbcc0" officeooo:paragraph-rsid="002dbcc0"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties style:text-line-through-style="solid" style:text-line-through-type="single" officeooo:rsid="002dbcc0" officeooo:paragraph-rsid="002dbcc0"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties style:text-underline-style="none" officeooo:rsid="001d072d"/>
@@ -798,73 +807,73 @@
    <text:p text:style-name="P5"><text:tab/></text:p>
    <text:p text:style-name="P3">How to store entered numbers?</text:p>
    <text:p text:style-name="P9"/>
-   <text:list xml:id="list2604476935" text:style-name="L1">
+   <text:list xml:id="list525969175" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P29">When number is entered (2), update the display as a string(?)</text:p>
+     <text:p text:style-name="P32">When number is entered (2), update the display as a string(?)</text:p>
     </text:list-item>
    </text:list>
-   <text:list xml:id="list1410672581" text:style-name="L2">
+   <text:list xml:id="list105670193" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P30">when another number is entered (3, so 23), string is updated in display</text:p>
+     <text:p text:style-name="P33">when another number is entered (3, so 23), string is updated in display</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P31">entering 4 would then make the string ‘234’ and etc</text:p>
-    </text:list-item>
-   </text:list>
-   <text:list xml:id="list2762963342" text:style-name="L3">
-    <text:list-item>
-     <text:p text:style-name="P32">only ever two variables (unless another one is stored in the ‘=’ function)</text:p>
+     <text:p text:style-name="P34">entering 4 would then make the string ‘234’ and etc</text:p>
     </text:list-item>
    </text:list>
-   <text:list xml:id="list1651569151" text:style-name="L4">
+   <text:list xml:id="list2365018763" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T10">so init two global variables</text:span><text:span text:style-name="T12"> </text:span><text:span text:style-name="T13">3 variables as first num, second num, answer</text:span></text:p>
+     <text:p text:style-name="P35">only ever two variables (unless another one is stored in the ‘=’ function)</text:p>
+    </text:list-item>
+   </text:list>
+   <text:list xml:id="list3695498732" text:style-name="L4">
+    <text:list-item>
+     <text:p text:style-name="P41"><text:span text:style-name="T10">so init two global variables</text:span><text:span text:style-name="T12"> </text:span><text:span text:style-name="T13">3 variables as first num, second num, answer</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P35"><text:span text:style-name="T7">when +, -, *, or / are selected, </text:span><text:span text:style-name="T8">first number</text:span><text:span text:style-name="T7"> is stored in first variable</text:span></text:p>
+     <text:p text:style-name="P38"><text:span text:style-name="T7">when +, -, *, or / are selected, </text:span><text:span text:style-name="T8">first number</text:span><text:span text:style-name="T7"> is stored in first variable</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P33">when ‘=’ is selected, second number is stored in second variable</text:p>
+     <text:p text:style-name="P36">when ‘=’ is selected, second number is stored in second variable</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P39">+, -, /, * can then call both numbers from global variables</text:p>
+     <text:p text:style-name="P42">+, -, /, * can then call both numbers from global variables</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P40">when ‘=’ is selected, it also saves &amp; displays the answer</text:p>
+     <text:p text:style-name="P43">when ‘=’ is selected, it also saves &amp; displays the answer</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P5"/>
    <text:p text:style-name="P4">How to know which operation (+, /, -, /) to call?</text:p>
    <text:p text:style-name="P5"/>
-   <text:list xml:id="list1988934981" text:style-name="L5">
+   <text:list xml:id="list788805294" text:style-name="L5">
     <text:list-item>
-     <text:p text:style-name="P34">When each is pressed, it highlights the selected operation</text:p>
+     <text:p text:style-name="P37">When each is pressed, it highlights the selected operation</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P34">Flag a boolean so that it is true</text:p>
+     <text:p text:style-name="P37">Flag a boolean so that it is true</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P34">When ‘=’ is pressed, it searches for the operation that is true and calls that function</text:p>
+     <text:p text:style-name="P37">When ‘=’ is pressed, it searches for the operation that is true and calls that function</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36">User may also change their mind about button so will need to revert and update flag if another one is chosen</text:p>
+     <text:p text:style-name="P39">User may also change their mind about button so will need to revert and update flag if another one is chosen</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P5"/>
    <text:p text:style-name="P2">Display</text:p>
    <text:p text:style-name="P7"/>
-   <text:list xml:id="list3272814512" text:style-name="L6">
+   <text:list xml:id="list2262710973" text:style-name="L6">
     <text:list-item>
-     <text:p text:style-name="P37">Need a line for full equation entered, e.g. 7 + 7 =</text:p>
+     <text:p text:style-name="P40">Need a line for full equation entered, e.g. 7 + 7 =</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Need a line for answer</text:p>
+     <text:p text:style-name="P40">Need a line for answer</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Clear button to clear all</text:p>
+     <text:p text:style-name="P40">Clear button to clear all</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Delete button to delete the last entered number</text:p>
+     <text:p text:style-name="P40">Delete button to delete the last entered number</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P7"/>
@@ -913,7 +922,11 @@
    <text:p text:style-name="P17"><text:tab/><text:tab/><text:tab/>firstString = answer</text:p>
    <text:p text:style-name="P17"/>
    <text:p text:style-name="P18">also need to force equation so that + will do = if there is already an equation in the viewport</text:p>
-   <text:p text:style-name="P43"><text:span text:style-name="T14">e.g. 7+11-6 will process 7+11 first, and then minus 6 – without needing to press = button</text:span></text:p>
+   <text:p text:style-name="P19">e.g. 7+11-6 will process 7+11 first, and then minus 6 – without needing to press = button</text:p>
+   <text:h text:style-name="P23" text:outline-level="1">To-do list</text:h>
+   <text:p text:style-name="P46">Restore clear button functionality</text:p>
+   <text:p text:style-name="P45">If user enters something like 1+9+, process 1+9 and display 10+ in equation line</text:p>
+   <text:p text:style-name="P45">Implement delete button functionality that removes last value from answer and equation lines</text:p>
   </office:text>
  </office:body>
 </office:document>
