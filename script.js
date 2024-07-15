@@ -39,6 +39,7 @@ function operate(e) {
     var text = element.innerText;
     equalSignCheck = checkForMathOperators(equation, equalSign);
     multipleOperatorsCheck = multipleMathOperators(equation + text, mathOperations);
+    firstOperatorCheck = firstOperator(equation);
     lastOperatorCheck = lastOperator(equation);
     if (text === equalSign && (equalSignCheck)) {
         //  do nothing
@@ -56,11 +57,11 @@ function operate(e) {
             continueCalculation(answer, e);
             equation = answer + text;
             equationLine.innerText = equation;
+        } else if (multipleOperatorsCheck > 1 && firstOperatorCheck == "-") {
+            equation = equation+ text;
+            equationLine.innerText = equation;
         } else {
             equationCheck = equation + text;
-            // let lastOperator = equationCheck
-            //     .split("")
-            //     .slice(equationCheck.length - 1);
             let lastOperatorCheck = lastOperator(equationCheck);
             let cleanedEquation = equation
                 .split("")
@@ -86,15 +87,29 @@ function operate(e) {
 }
 
 function createEquationArray() {
-    let equationArray = equation.split(mathOperationsSplit);
-    firstString = equationArray[0];
-    secondString = equationArray[1];
+    let firstOperatorCheck = firstOperator(equation);
+    if (firstOperatorCheck == "-") {
+        let subString = equation.substring(1);
+        let equationArray = subString.split(mathOperationsSplit);
+        firstString = "-" + equationArray[0];
+        secondString = equationArray[1];
+    } else {
+        let equationArray = equation.split(mathOperationsSplit);
+        firstString = equationArray[0];
+        secondString = equationArray[1];
+    }
     answer = runCalculation(firstString, secondString);
     updateAnswerLine(answer);
 };
 
 function runCalculation(firstString, secondString) {
-    var text = whatMathOperator();
+    var text = "";
+    firstOperatorCheck = firstOperator(equation);
+    if (firstOperatorCheck == "-") {
+        text = whatMathOperator();
+    } else {
+        text = whatMathOperator();
+    }
     let answer;
 
     switch(text) {
@@ -143,16 +158,28 @@ function checkForMathOperators(str, chars) {
 };
 
 function whatMathOperator() {
+    let firstOperatorCheck = firstOperator(equation);
     let text = equation;
     let index = -1;
-    for (let operator of mathOperations) {
-        index = text.indexOf(operator);
-        if (index !== -1) {
-            break;
+    if (firstOperatorCheck == "-") {
+        for (let operator of mathOperations) {
+            index = text.indexOf(operator, 1);
+            if (index !== -1) {
+                break;
+            }
         }
+        let result = text.slice(index, index + 1);
+        return result;
+    } else {
+        for (let operator of mathOperations) {
+            index = text.indexOf(operator);
+            if (index !== -1) {
+                break;
+            }
+        }
+        let result = text.slice(index, index + 1);
+        return result;
     }
-    let result = text.slice(index, index + 1);
-    return result;
 };
 
 function multipleMathOperators(str, chars) {
@@ -199,7 +226,15 @@ function deleteInput() {
 function lastOperator(str) {
     let lastOperator = str;
     lastOperator = lastOperator
-    .split("")
-    .slice(lastOperator.length - 1);
+        .split("")
+        .slice(lastOperator.length - 1);
     return lastOperator;
+};
+
+function firstOperator(str) {
+    let firstOperator = str;
+    firstOperator = firstOperator
+        .split("")
+        .slice(0, 1);
+    return firstOperator;
 };
